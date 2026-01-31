@@ -9,9 +9,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.activity.viewModels
-//@Composable
-//fun OnBoarding1Screen(modifier: Modifier = Modifier) {
-//    Column(modifier = Modifier.fillMaxSize()){
-//        Image(painter = painterResource(viewModel.))// нужно использовать viewModel, но как подключить из MainActivity?
-//    }
-//}
+@Composable
+fun OnBoarding1Screen(modifier: Modifier = Modifier) {
+    Column(modifier = Modifier.fillMaxSize()){
+        //Image(painter = painterResource(viewModel.))// нужно использовать viewModel, но как подключить из MainActivity?
+    }
+}

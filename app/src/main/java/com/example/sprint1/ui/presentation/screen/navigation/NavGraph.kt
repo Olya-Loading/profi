@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navOptions
 import com.example.sprint1.ui.presentation.screen.onboarding1.OnBoarding1Screen
+
 import com.example.sprint1.ui.presentation.screen.splash.SpalshScreen
 
 sealed class Destinations(val route:String){
@@ -18,7 +19,7 @@ sealed class Destinations(val route:String){
 fun NavGraph(controller: NavHostController) {
     NavHost(navController = controller, startDestination = Destinations.SplashScreen.route ){
         composable(Destinations.SplashScreen.route) {
-            SpalshScreen()
+            SpalshScreen(controller)
         }
         composable(Destinations.OnBoardingScreen1.route) {
             OnBoarding1Screen()

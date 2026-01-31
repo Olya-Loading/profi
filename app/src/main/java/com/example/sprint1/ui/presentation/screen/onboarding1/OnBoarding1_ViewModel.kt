@@ -5,7 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import com.example.sprint1.ui.data.models.CardOnBoarding
-import com.example.sprint1.ui.data.models.CardOnBoardingService
+import com.example.sprint1.ui.data.CardOnBoardingService
 import com.example.sprint1.ui.domain.CardOnBoardingRepository
 
 class OnBoarding1_ViewModel: ViewModel() {

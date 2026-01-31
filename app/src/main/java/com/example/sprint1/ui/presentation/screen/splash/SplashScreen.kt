@@ -19,16 +19,19 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavHostController
 import com.example.sprint1.R
+import com.example.sprint1.ui.presentation.screen.navigation.Destinations
 import com.example.sprint1.ui.theme.DeepPurple
 import com.example.sprint1.ui.theme.Sprint1Theme
 import kotlinx.coroutines.delay
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
-fun SpalshScreen() {
+fun SpalshScreen(controller: NavHostController) {
     LaunchedEffect(Unit) {
         delay(3000)
+        controller.navigate(Destinations.OnBoardingScreen1.route)
 
     }
     Scaffold(containerColor = DeepPurple) {
@@ -46,7 +49,7 @@ fun SpalshScreen() {
 @Composable
 private fun PrevSplash() {
     Sprint1Theme {
-        SpalshScreen()
+       // SpalshScreen()
     }
     
 }

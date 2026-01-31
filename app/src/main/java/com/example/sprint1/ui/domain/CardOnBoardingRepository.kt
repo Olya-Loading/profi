@@ -1,7 +1,7 @@
 package com.example.sprint1.ui.domain
 
 import com.example.sprint1.ui.data.models.CardOnBoarding
-import com.example.sprint1.ui.data.models.CardOnBoardingService
+import com.example.sprint1.ui.data.CardOnBoardingService
 
 class CardOnBoardingRepository {
     private val service = CardOnBoardingService()
