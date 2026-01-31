@@ -13,6 +13,7 @@ import com.example.sprint1.ui.presentation.screen.splash.SpalshScreen
 sealed class Destinations(val route:String){
     data object SplashScreen: Destinations("splash")
     data object OnBoardingScreen1: Destinations("onboarding1")
+    data object OnBoardingScreen2: Destinations("onboarding2")
 }
 
 @Composable
