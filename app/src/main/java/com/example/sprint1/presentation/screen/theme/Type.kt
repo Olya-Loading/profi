@@ -1,4 +1,4 @@
-package com.example.sprint1.ui.theme
+package com.example.sprint1.presentation.screen.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

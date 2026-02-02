@@ -1,4 +1,4 @@
-package com.example.sprint1.ui.presentation.screen.splash
+package com.example.sprint1.presentation.screen.splash
 import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -16,18 +16,19 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import com.example.sprint1.R
-import com.example.sprint1.ui.presentation.screen.navigation.Destinations
-import com.example.sprint1.ui.theme.DeepPurple
-import com.example.sprint1.ui.theme.Sprint1Theme
+import com.example.sprint1.presentation.screen.navigation.Destinations
+import com.example.sprint1.presentation.screen.theme.DeepPurple
+import com.example.sprint1.presentation.screen.theme.Sprint1Theme
 import kotlinx.coroutines.delay
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
-fun SpalshScreen(controller: NavHostController) {
+fun SpalshScreen(controller : NavHostController = rememberNavController()) {
     LaunchedEffect(Unit) {
-        delay(3000)
-        controller.navigate(Destinations.OnBoardingScreen1.route)
+        delay(2000)
+        controller.navigate(Destinations.OnBoarding1.route)
 
     }
     Scaffold(containerColor = DeepPurple) {
