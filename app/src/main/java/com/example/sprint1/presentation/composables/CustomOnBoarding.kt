@@ -7,10 +7,12 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Button
@@ -33,9 +35,13 @@ fun CustomOnBoarding( image: Int,
     Scaffold(containerColor = Color.White) {
         Column(modifier = Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally) {
             Image(painter = painterResource(image), contentDescription = "", modifier = Modifier.size(240.dp).padding(top = 40.dp))
-            PagerIndicator(3,0)
+            Spacer(modifier = Modifier.padding(top = 100.dp))
+            PagerIndicator(3,pager_state)
+
             Text(title, modifier = Modifier.padding(top = 20.dp ))
-            Text(text)
+
+            Box(modifier = Modifier.width(263.dp)){ Text(text, modifier = Modifier.padding(top = 40.dp))}
+
             Button(onClick = onClick) {
                 Text(text_button)
             }

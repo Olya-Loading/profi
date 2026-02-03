@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun PagerIndicator(pageCount: Int, currentPageIndex: Int, modifier: Modifier = Modifier) {
-    Box(modifier = Modifier.fillMaxSize()) {
+    Box() {
         Row(
             modifier = Modifier
                 .wrapContentHeight()
@@ -35,7 +35,7 @@ fun PagerIndicator(pageCount: Int, currentPageIndex: Int, modifier: Modifier = M
                         .padding(2.dp)
                         .clip(CircleShape)
                         .background(color)
-                        .size(16.dp)
+                        .size(13.dp)
                 )
             }
         }

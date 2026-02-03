@@ -33,10 +33,10 @@ fun NavGraph(navController: NavHostController, viewModel: OnBoardingViewModel) {
         }
 
         composable(Destinations.OnBoarding2.route) {
-            OnBoarding2Screen( navController=navController)
+            OnBoarding2Screen( viewModel  ,navController=navController)
         }
         composable(Destinations.OnBoarding3.route) {
-            OnBoarding3Screen( navController=navController)
+            OnBoarding3Screen( viewModel  ,navController=navController)
         }
     }
 }

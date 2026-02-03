@@ -1,24 +1,12 @@
 package com.example.sprint1.presentation.screen.onboarding1
 
 import android.annotation.SuppressLint
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
+
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.painterResource
-import androidx.compose.foundation.layout.size
-import androidx.compose.material3.Button
-import androidx.compose.material3.Text
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import com.example.sprint1.presentation.composables.CustomOnBoarding
 import com.example.sprint1.presentation.screen.navigation.Destinations
-import com.example.sprint1.presentation.screen.onboarding2.OnBoarding2Screen
 import com.example.sprint1.presentation.screen.theme.Sprint1Theme
 
 @SuppressLint("ViewModelConstructorInComposable")
@@ -33,4 +21,5 @@ fun OnBoarding1Screen(viewModel: OnBoardingViewModel, navController: NavHostCont
         onClick = { navController.navigate(Destinations.OnBoarding2.route) }
     )
     }
+
 
