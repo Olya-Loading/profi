@@ -101,7 +101,7 @@ fun LanguageScreen(navHostController: NavHostController) {
                     }
 
                 }
-        Button(onClick = {navHostController.navigate(Destinations.)}) { }
+        Button(onClick = {navHostController.navigate(Destinations.Profile.route)}) { }
 
     }
 
